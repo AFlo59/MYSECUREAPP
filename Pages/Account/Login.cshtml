@@ -1,0 +1,18 @@
+@page
+@model MySecureApp.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Connexion";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>Connexion</h2>
+
+<form method="post">
+    <label for="email">Email</label>
+    <input type="email" name="Email" required />
+
+    <label for="password">Mot de passe</label>
+    <input type="password" name="Password" required />
+
+    <button type="submit">Se connecter</button>
+</form>
